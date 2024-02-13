@@ -6,8 +6,8 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "medicsync",
-    "version": "0.0.0"
+    "productName": "MedSync",
+    "version": "2.3.0"
   },
   "tauri": {
     "allowlist": {
@@ -19,9 +19,11 @@
     },
     "windows": [
       {
+        "focus": true,
+        "center": true,
         "fullscreen": false,
         "resizable": true,
-        "title": "medicsync",
+        "title": "MedSync",
         "width": 800,
         "height": 600
       }
@@ -32,7 +34,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "com.medsync.build",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",

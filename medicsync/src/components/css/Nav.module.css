@@ -1,0 +1,77 @@
+.NavList {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  position: absolute;
+  justify-content: space-between;
+  background: #202020;
+  overflow: -moz-hidden-unscrollable;
+}
+
+.LinkCont {
+  padding-top: 3px;
+  overflow: hidden;
+  justify-self: left;
+  color: aliceblue;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.UserCont {
+  justify-self: end;
+  color: #f0f8ff;
+  list-style: none;
+  margin-right: 30px;
+}
+
+.Link {
+  color: #f0f8ff;
+  display: inline-block;
+  position: relative;
+  padding: 3px;
+  margin-left: 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.Link:hover {
+  color: rgb(170, 170, 170);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.Link:first-child {
+  margin-left: 5px;
+}
+.Link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(170, 170, 170);
+  transform-origin: bottom center;
+  transition: transform 0.35s ease-out;
+  -webkit-transition: transform 0.35s ease-out;
+  -moz-transition: transform 0.35s ease-out;
+  -ms-transition: transform 0.35s ease-out;
+  -o-transition: transform 0.35s ease-out;
+}
+.Link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
