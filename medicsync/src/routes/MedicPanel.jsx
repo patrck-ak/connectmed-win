@@ -187,26 +187,9 @@ const MedicPanel = () => {
                 value="Descrição"
               />
               <button
-                title="Apagar paciente"
-                className="btn btn-danger"
-                onClick={() => {
-                  confirmDelete(pacient.name, pacient._id);
-                }}
-              >
-                <FaTrash />
-              </button>
-              <button
                 title="Editar paciente"
-                className="btn btn-secondary "
-                onClick={() => {
-                  nav(`/pacient/edit/${pacient._id}`);
-                }}
-              >
-                <FaPencilAlt />
-              </button>
-              <button title="Nova consulta" className="btn btn-primary">
-                <FaFileMedicalAlt />
-              </button>
+                className="bg-transparent"
+              ></button>
             </div>
           </li>
           {data === undefined ? (
@@ -276,7 +259,7 @@ const MedicPanel = () => {
                   >
                     <FaPencilAlt />
                   </button>
-                  <button title="Nova consulta" className="btn bg-transparent">
+                  <button title="Nova consulta" className="btn btn-primary">
                     <FaFileMedicalAlt />
                   </button>
                 </div>
