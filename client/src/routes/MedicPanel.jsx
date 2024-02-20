@@ -154,44 +154,6 @@ const MedicPanel = () => {
           className="list-group"
           style={{ width: "90%", position: "inherit" }}
         >
-          <li className="list-group-item bg-dark border-dark" key="titulo">
-            <div className="input-group m-auto">
-              <input
-                type="text"
-                readOnly
-                className="form-control"
-                value="Nome"
-              />
-              <input
-                type="text"
-                readOnly
-                className="form-control"
-                value="CPF"
-              />
-              <input
-                type="text"
-                readOnly
-                className="form-control"
-                value="Endereço"
-              />
-              <input
-                type="text"
-                readOnly
-                className="form-control"
-                value="E-Mail"
-              />
-              <input
-                type="text"
-                readOnly
-                className="form-control"
-                value="Descrição"
-              />
-              <button
-                title="Editar paciente"
-                className="bg-transparent"
-              ></button>
-            </div>
-          </li>
           {data === undefined ? (
             <li className="list-group-item bg-dark border-dark">
               <div className="input-group m-auto">
@@ -214,30 +176,35 @@ const MedicPanel = () => {
                   <input
                     type="text"
                     readOnly
+                    title="Nome"
                     className="form-control"
                     value={pacient.name}
                   />
                   <input
                     type="text"
                     readOnly
+                    title="CPF"
                     className="form-control"
                     value={pacient.cpf}
                   />
                   <input
                     type="text"
                     readOnly
+                    title="Endereço"
                     className="form-control"
                     value={pacient.addr}
                   />
                   <input
                     type="text"
                     readOnly
+                    title="E-Mail"
                     className="form-control"
                     value={pacient.email}
                   />
                   <input
                     type="text"
                     readOnly
+                    title="Descrição"
                     className="form-control"
                     value={pacient.desc}
                   />

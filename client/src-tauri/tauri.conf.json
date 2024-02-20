@@ -6,7 +6,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "MedSync",
+    "productName": "ConnectMed",
     "version": "2.3.0"
   },
   "tauri": {
@@ -24,7 +24,8 @@
         "fullscreen": false,
         "resizable": true,
         "title": "MedSync",
-        "width": 800,
+        "width": 1000,
+        "minWidth": 1000,
         "height": 600
       }
     ],

@@ -50,7 +50,6 @@ function Nav() {
             </Link>
           </li>
         </ul>
-        {/* Saudação */}
       </nav>
     </>
   );

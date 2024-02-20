@@ -3,7 +3,7 @@ import { FaRegIdBadge, FaSearch, FaUser } from "react-icons/fa";
 import Nav from "../components/Nav";
 import { InputMask } from "@react-input/mask";
 
-function NewConsult() {
+function SearchConsult() {
   return (
     <>
       <Nav />
@@ -44,4 +44,4 @@ function NewConsult() {
   );
 }
 
-export default NewConsult;
+export default SearchConsult;
